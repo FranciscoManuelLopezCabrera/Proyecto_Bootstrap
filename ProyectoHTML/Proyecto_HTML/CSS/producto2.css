@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+.product-card {
+    background: white;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: #dbe2ee 0 0 20px 5px;
+    display: flex;
+    gap: 30px;
+    color: #191847;
+}
+
+.cover-image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.product-card img:hover {
+    transform: scale(1.1);
+}
+
+.more-image-container {
+    display: flex;
+}
+
+.more-image {
+    width: 100px;
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.free-shipping {
+    display: inline-block;
+    background: #191847;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+
+.product-name {
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+}
+
+.regular-price {
+    text-decoration: line-through;
+}
+
+.discount-price {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.offer-info {
+    font-size: 14px;
+    color: gray;
+}
+
+.add-to-cart {
+    font-family: open sans;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    background: #191847;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: #e2e9f3 0 5px;
+    margin: 20px 0;
+}
+
+.add-to-cart ion-icon {
+    font-size: 30px;
+    margin-bottom: -8px;
+}
+
+.add-to-cart:hover {
+    background: #e2e9f3;
+    box-shadow: #191847 0 5px;
+    color: #191847;
+}
+
+.add-to-cart:hover ion-icon {
+    transform: rotate(360deg);
+}
+
+.stock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stock-status {
+    width: 14px;
+    height: 14px;
+    background: #00d98b;
+    border-radius: 50%;
+}
+
+.stock-info {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    width: 200px;
+    color: #191847;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px;
+    border: solid #dfe6f0 2px;
+    border-radius: 10px;
+}
+
+.button ion-icon {
+    font-size: 30px;
+    margin-bottom: -7px;
+}
+
+.button:hover {
+    box-shadow: #e2e9f3 0 0 10px;
+}
+
+.button:hover ion-icon {
+    transform: rotate(360deg);
+}
+
+.CajaDescripcion {
+    display: flex;
+    justify-content: start;
+    background: white;
+    width: 100%;
+    height: 100%;
+    max-width: 80%;
+    max-height: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: #dbe2ee 0 0 20px 5px;
+    display: flex;
+    gap: 30px;
+    color: #191847;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    15% {
+        transform: translateX(-100%);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    35% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    55% {
+        transform: translateX(-300%);
+    }
+
+    70% {
+        transform: translateX(-300%);
+    }
+
+    75% {
+        transform: translateX(-400%);
+    }
+
+    90% {
+        transform: translateX(-400%);
+    }
+
+    95% {
+        transform: translateX(-500%);
+    }
+
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slider {
+    position: relative;
+}
+
+.slides {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100vw;
+    height: 800px;
+    flex-shrink: 0;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.slide a {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.caption {
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 8vw;
+    position: absolute;
+    bottom: 8vw;
+    right: 4vw;
+}
+
+.slide:target {
+    animation-name: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+.slider-controler {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.slider-controler li {
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.slider-controler a {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.descripcion ul {
+    padding-left: 50px;
+    position: relative;
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.wrapper ul {
+    list-style: none;
+}
+.descripcion p{
+    font-size: 32px;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .slide {
+        width: 1200px;
+    }
+
+    .caption {
+        font-size: 96px;
+        bottom: 96px;
+        right: 50px;
+    }
+}
